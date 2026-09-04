@@ -1,0 +1,26 @@
+{
+  "name": "aurora-mcp",
+  "version": "1.0.0",
+  "description": "MCP server exposing aurora-cli (anonymous Google Play) as tools: search, info, versions, download (local APK paths)",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "mcp-use": "^2.0.0",
+    "zod": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.7",
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}
