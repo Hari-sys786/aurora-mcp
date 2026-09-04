@@ -3,6 +3,14 @@
 MCP server exposing anonymous Google Play (via [aurora-cli](https://github.com/Hari-sys786/aurora-cli)) as tools.
 Built on [mcp-use](https://github.com/mcp-use/mcp-use) (TypeScript). Standalone — the only external piece is the `aurora-cli` binary.
 
+## One-click setup
+
+```bash
+curl -sL https://raw.githubusercontent.com/Hari-sys786/aurora-mcp/main/setup.sh | bash
+```
+
+Clones the repo, fetches/builds `aurora-cli` (release binary on arm64, source build elsewhere), installs deps, starts the server on `:3100`.
+
 ## Tools
 
 | Tool | What it does |
@@ -15,7 +23,7 @@ Built on [mcp-use](https://github.com/mcp-use/mcp-use) (TypeScript). Standalone 
 
 No Google credentials ever — anonymous token + spoofed device via aurora-cli.
 
-## Run
+## Manual run
 
 ```bash
 npm install
